@@ -16,7 +16,7 @@ class TrickController extends Controller
      */
     public function index()
     {
-        //
+        print('trick index');
     }
 
     /**

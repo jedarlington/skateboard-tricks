@@ -306,5 +306,7 @@ header .logo {
 /* line 2, ../sass/navigation/_navigation.scss */
 .navigation ul {
   display: flex;
+  float: right;
   justify-content: space-around;
+  width: 33%;
 }
