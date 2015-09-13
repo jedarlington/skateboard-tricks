@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    sass (3.4.18)
+    sass-globbing (1.1.1)
+      sass (>= 3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  sass-globbing (= 1.1.1)
+
+BUNDLED WITH
+   1.10.6

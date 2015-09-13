@@ -2,6 +2,15 @@
 
 @include('includes.header')
 
-<h1>Main blade</h1>
+<div class="container">
+  <aside class="sidebar">
+    <h2>All tricks</h2>
+    <h2>Categories</h2>
+  </aside>
+
+  <div class="main-content">
+    <h1>Main blade</h1>
+  </div>
+</div>
 
 @include('includes.footer')

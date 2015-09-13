@@ -1,1 +1,10 @@
-<h1>Head.blade.php</h1>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Skateboard Tricks</title>
+
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>

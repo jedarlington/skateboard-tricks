@@ -1,0 +1,21 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+}
+
+.sidebar {
+  background: #1e1e1e;
+  float: left;
+  width: 25%;
+}
+
+.main-content {
+  width: 75%;
+}
