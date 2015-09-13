@@ -26,7 +26,7 @@ class TrickController extends Controller
      */
     public function create()
     {
-        //
+        return View('trick.create');
     }
 
     /**
