@@ -250,6 +250,32 @@ body {
   width: 75%;
 }
 
+/* line 2, ../sass/base/forms/_defaults.scss */
+form input {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  font-size: 1.5em;
+  margin: 0 0 0.5em 0;
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+/* line 11, ../sass/base/forms/_defaults.scss */
+form input[type="submit"] {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* line 18, ../sass/base/forms/_defaults.scss */
+form input[type="submit"]:hover {
+  background-color: #449d44;
+  border-color: #398439;
+}
+
 /* line 1, ../sass/base/typography/_headings.scss */
 h1,
 h2 {
@@ -284,6 +310,10 @@ a:hover {
   float: left;
   padding: 20px 20px;
 }
+/* line 5, ../sass/layout/_content.scss */
+.main-content h1 {
+  margin: 0 0 0.5em 0;
+}
 
 /* line 1, ../sass/layout/_header.scss */
 header {
@@ -300,6 +330,7 @@ header .logo {
 /* line 1, ../sass/layout/_sidebar.scss */
 .sidebar {
   color: #fff;
+  min-height: 500px;
   padding: 20px 20px;
 }
 

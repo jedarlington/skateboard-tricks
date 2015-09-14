@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use Input;
+use Redirect;
+
 class TrickController extends Controller
 {
     /**
@@ -37,7 +40,9 @@ class TrickController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = Input::all();
+
+        var_dump($input); die;
     }
 
     /**
