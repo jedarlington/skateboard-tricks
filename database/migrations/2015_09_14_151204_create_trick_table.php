@@ -12,10 +12,10 @@ class CreateTrickTable extends Migration
      */
     public function up()
     {
-      Schema::create('trick', function (Blueprint $table) {
+      Schema::create('tricks', function (Blueprint $table) {
         $table->increments('id');
         $table->integer('category_id')->unsigned()->nullable();
-        $table->foreign('category_id')->references('id')->on('category');
+        $table->foreign('category_id')->references('id')->on('categories');
         $table->string('name');
         $table->timestamps();
       });
@@ -28,6 +28,6 @@ class CreateTrickTable extends Migration
      */
     public function down()
     {
-        Schema::drop('trick');
+        Schema::drop('tricks');
     }
 }

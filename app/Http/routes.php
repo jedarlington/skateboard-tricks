@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.main');
+Route::get('/', 'TricksController@index');
+
+Route::model('tricks', 'Tricks');
+
+Route::bind('tricks', function($value, $route) {
+	return App\Tricks::whereSlug($value)->first();
 });
 
-Route::resource('trick', 'TrickController');
+Route::resource('tricks', 'TricksController');

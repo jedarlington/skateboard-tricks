@@ -4,7 +4,7 @@
 
   <h1>Add a new trick</h1>
 
-  {!! Form::model(new App\Trick, ['route' => ['trick.store']]) !!}
+  {!! Form::model(new App\Tricks, ['route' => ['tricks.store']]) !!}
       <!-- Trick name -->
       <div class="form-item">
         {!! Form::text('name', 'Name a trick...') !!}

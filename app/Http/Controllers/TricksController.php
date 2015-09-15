@@ -10,7 +10,9 @@ use App\Http\Controllers\Controller;
 use Input;
 use Redirect;
 
-class TrickController extends Controller
+use App\Tricks;
+
+class TricksController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +21,9 @@ class TrickController extends Controller
      */
     public function index()
     {
-        print('trick index');
+      $tricks = Tricks::all();
+
+      return View('tricks.index')->with('tricks', $tricks);
     }
 
     /**
@@ -29,7 +33,7 @@ class TrickController extends Controller
      */
     public function create()
     {
-        return View('trick.create');
+        return View('tricks.create');
     }
 
     /**
@@ -40,9 +44,10 @@ class TrickController extends Controller
      */
     public function store(Request $request)
     {
-        $input = Input::all();
+      $input = Input::all();
+      Trick::create($input);
 
-        var_dump($input); die;
+      return Redirect::route('/')->with('message', 'Trick added!');
     }
 
     /**
